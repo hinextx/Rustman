@@ -162,7 +162,7 @@ impl App<'_> {
                     (None, None) => None,
                     (Some(pre_request_output), None) => Some(pre_request_output),
                     (None, Some(post_request_output)) => Some(post_request_output),
-                    (Some(pre_request_output), Some(post_request_output)) => Some(&format!("{}\n{}", pre_request_output, post_request_output)),
+                    (Some(pre_request_output), Some(post_request_output)) => None,//Some(&format!("{}\n{}", pre_request_output, post_request_output)),
                 };
 
                 match console_output {

@@ -57,10 +57,10 @@ image = "=0.25.8"
 ## Syntax highlighting
 syntect = { version = "=5.3.0", features = ["default-fancy"] }
 ## Serialize & Deserialize application data into files
-serde = { version = "=1.0.219", features = ["derive", "rc"] }
-serde_json = "=1.0.143"
+serde = { version = "=1.0.228", features = ["derive", "rc"] }
+serde_json = "=1.0.145"
 serde_yaml = "=0.9.34"
-serde-versioning = "1.0.219"
+serde-versioning = "1.0.228-fix.1"
 ## Pretty print JSON
 jsonxf = "=1.1.1"
 ## Serialize & Deserialize application config files
@@ -133,3 +133,7 @@ tracing-subscriber = { version = "=0.3.20", features = ["parking_lot", "chrono",
 tracing-log = "=0.2.0"
 ## Opentracing middleware implementation for reqwest-middleware
 reqwest-tracing = "=0.5.8"
+
+# Modern GUI
+gpui = "0.2.2"
+gpui-component = "0.4.0"
